@@ -13,7 +13,7 @@ import (
 //Setting : 録画設定json用構造体
 type Setting struct {
 	RecTime       string `json:"recTime"`
-	SaveDir       string `json:"saveDir"`
+	OutputDir     string `json:"outputDir"`
 	ConnectServer string `json:"connectServer"`
 }
 
@@ -75,7 +75,7 @@ func main() {
 	fileName := t.Format("2006_01_02_15_04_05") + ".flv"
 
 	//コマンド
-	cmdstr := "rtmpdump --live --rtmp " + setting[0].ConnectServer + " --timeout 60 -B " + setting[0].RecTime + " -o " + setting[0].SaveDir + fileName
+	cmdstr := "rtmpdump --live --rtmp " + setting[0].ConnectServer + " --timeout 60 -B " + setting[0].RecTime + " -o " + setting[0].OutputDir + fileName
 
 	//実行
 	runCmdStr(cmdstr)
