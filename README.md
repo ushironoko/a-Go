@@ -12,11 +12,11 @@ git clone
 
 Arrangement
 
-* rtmpdump.exe or rtmpdump install(yum,apt-get...etc)
+* rtmpdump.exe or rtmpdump install
 * setting.json
-  * recTime(sec,default:3900)
-  * output dir(default:dist)
-  * rtmp url(default:AG)
+  * recTime(sec, default : 3900)
+  * outputDir(default : dist)
+  * connectServer(default : AG)
 
 output directory
 
