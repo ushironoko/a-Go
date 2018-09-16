@@ -13,12 +13,8 @@ git clone
 Arrangement
 
 * rtmpdump.exe or rtmpdump install
-* setting.json
-  * recTime(sec, default : 3900)
-  * outputDir(default : dist)
-  * connectServer(default : AG)
 
-output directory
+Make Output Directory
 
 ```
 mkdir dist
@@ -34,6 +30,14 @@ or
 go build main.go
 ```
 
-Operation check
+# How to Rec Settings
+
+* setting.json
+  * recTime(sec, default : 3900)
+  * outputDir(default : dist)
+  * connectServer(default : AG)
+
+
+# Operation check
 
 * Windows 10 (Task Runner)
