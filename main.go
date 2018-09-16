@@ -23,10 +23,7 @@ func runCmdStr(cmdstr string) error {
 
 	//文字列をコマンドとオプションにスライス
 	c, err := shellwords.Parse(cmdstr)
-	if err != nil {
-		failOnError(err)
-		return err
-	}
+	failOnError(err)
 
 	switch len(c) {
 	case 0:
@@ -35,17 +32,13 @@ func runCmdStr(cmdstr string) error {
 	case 1:
 		//オプションなしコマンド
 		err := exec.Command(c[0]).Run()
-		if err != nil {
-			failOnError(err)
-			return err
-		}
+		failOnError(err)
+
 	default:
 		//コマンド+オプション
 		err := exec.Command(c[0], c[1:]...).Run()
-		if err != nil {
-			failOnError(err)
-			return err
-		}
+		failOnError(err)
+
 	}
 
 	return nil
@@ -60,9 +53,7 @@ func failOnError(err error) {
 func main() {
 	//setting.json 読み込み
 	bytes, err := ioutil.ReadFile("setting.json")
-	if err != nil {
-		failOnError(err)
-	}
+	failOnError(err)
 
 	//json デコード
 	var setting []Setting
