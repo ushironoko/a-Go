@@ -1,4 +1,4 @@
-# aANDgo
+# a-Go
 
 超A&G recording with RTMPdump from Go(exec)
 
