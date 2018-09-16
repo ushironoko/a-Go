@@ -1,0 +1,5 @@
+# no exe
+*.exe
+
+# no output directory
+/dist/
