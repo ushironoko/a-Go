@@ -1,7 +1,7 @@
 
 [
     {
-        "startHour" : 3,
+        "startHour" : 2,
         "recTime" : "1800",
         "outputDir" : "dist/radio_no_radio/",
         "connectServer" : "rtmp://fms-base1.mitene.ad.jp/agqr/aandg22"
