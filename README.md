@@ -1,6 +1,6 @@
 # a-Go
 
-超A&G recording with RTMPdump from Go(exec)
+超A&G recording with RTMPDump from Go(exec)
 
 # Use
 
@@ -40,6 +40,6 @@ Switching outputDir, recTime, and connectServer, at current hour
   * outputDir
   * connectServe
 
-# Operation check
+# Operation Check
 
-* Windows 10 (Task Runner)
+* Windows 10 (Task scheduler)
