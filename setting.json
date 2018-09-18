@@ -1,7 +1,21 @@
+
 [
     {
-        "recTime":"3900",
-        "outputDir":"dist/",
-        "connectServer":"rtmp://fms-base1.mitene.ad.jp/agqr/aandg22"
+        "startHour" : 3,
+        "recTime" : "1800",
+        "outputDir" : "dist/radio_no_radio/",
+        "connectServer" : "rtmp://fms-base1.mitene.ad.jp/agqr/aandg22"
+    },        
+    {
+        "startHour" : 23,
+        "recTime" : "3900",
+        "outputDir" : "dist/yonayona/",
+        "connectServer" : "rtmp://fms-base1.mitene.ad.jp/agqr/aandg22"
+    },        
+    {
+        "startHour" : 7,
+        "recTime" : "1800",
+        "outputDir" : "dist/nakayoshi/",
+        "connectServer" : "rtmp://fms-base1.mitene.ad.jp/agqr/aandg22"
     }
 ]

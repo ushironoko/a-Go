@@ -12,6 +12,7 @@ import (
 
 //Setting : 録画設定json用構造体
 type Setting struct {
+	StartHour     int    `json:"startHour"`
 	RecTime       string `json:"recTime"`
 	OutputDir     string `json:"outputDir"`
 	ConnectServer string `json:"connectServer"`
@@ -61,14 +62,23 @@ func main() {
 		failOnError(err)
 	}
 
-	//ファイル名生成
+	//現在時刻取得
 	t := time.Now()
+	hour := t.Hour()
+
+	//ファイル名生成
 	fileName := t.Format("2006_01_02_15_04_05") + ".flv"
 
-	//コマンド
-	cmdstr := "rtmpdump --live --rtmp " + setting[0].ConnectServer + " --timeout 60 -B " + setting[0].RecTime + " -o " + setting[0].OutputDir + fileName
+	//スケジュールを読み込んで録画スタート
+	for _, schedule := range setting {
+		if schedule.StartHour == hour {
+			//コマンド
+			cmdstr := "rtmpdump --live --rtmp " + schedule.ConnectServer + " --timeout 60 -B " + schedule.RecTime + " -o " + schedule.OutputDir + fileName
 
-	//実行
-	runCmdStr(cmdstr)
+			//実行
+			runCmdStr(cmdstr)
 
+			break
+		}
+	}
 }

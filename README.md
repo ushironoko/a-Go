@@ -32,11 +32,13 @@ go build main.go
 
 # How to Rec Settings
 
-* setting.json
-  * recTime(sec, default : 3900)
-  * outputDir(default : dist)
-  * connectServer(default : AG)
+Switching outputDir, recTime, and connectServer, at current hour
 
+* setting.json
+  * startHour(int, Compare with current time) 
+  * recTime(sec)
+  * outputDir
+  * connectServe
 
 # Operation check
 
