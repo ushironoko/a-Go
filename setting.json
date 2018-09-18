@@ -13,7 +13,7 @@
         "connectServer" : "rtmp://fms-base1.mitene.ad.jp/agqr/aandg22"
     },        
     {
-        "startHour" : 7,
+        "startHour" : 6,
         "recTime" : "1800",
         "outputDir" : "dist/nakayoshi/",
         "connectServer" : "rtmp://fms-base1.mitene.ad.jp/agqr/aandg22"
