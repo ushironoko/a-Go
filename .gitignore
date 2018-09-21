@@ -1,5 +1,15 @@
-# no exe
+# binaries for programs and plugins
 *.exe
+*.exe~
+*.dll
+*.so
+*.dylib
 
-# no output directory
+# test binaries
+*.test
+
+# output
+*.out
+
+# output directory
 /dist/
