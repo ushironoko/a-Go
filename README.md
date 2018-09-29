@@ -1,45 +1,29 @@
 # a-Go
 
-超A&G recording with RTMPDump from Go(exec)
+超A&Gの番組を rtmpdump を使って録画できます。
 
-# Use
+# 使い方
 
-Get
+実行ファイルはリリースからダウンロードするか、本コードをビルドしてください。（ビルドするには Go の実行環境が必要です）
 
-```
-git clone
-```
+録画に rtmpdump を使用します。Windows の場合は以下のサイトから windows.zip をダウンロードして解凍後、rtmpdump.exe を main.exe と同じ場所に配置してください。
 
-Arrangement
+http://rtmpdump.mplayerhq.hu/download/
 
-* rtmpdump.exe or rtmpdump install
+Linux または Mac の場合は コマンド等で rtmpdump をインストールしてください。
 
-Make Output Directory
+タスクスケジューラや crontab で定期的に実行すれば、自動録音環境を作る事もできます。
 
-```
-mkdir dist
-```
+# 設定
 
-Go Command Run
+setting.json に出力ファイルに関する設定を記述できます。
 
-```
-go run main.go
+* startHour(現在時刻と比較されて、一致した場合この設定を利用します) 
+* recTime(録画時間を分単位で設定します)
+* outputDir(録画ファイルをどこに出力するか指定します)
+* connectServe(接続するRTMP URLを指定します)
 
-or
+# 動作確認
 
-go build main.go
-```
-
-# How to Rec Settings
-
-Switching outputDir, recTime, and connectServer, at current hour
-
-* setting.json
-  * startHour(int, Compare with current time) 
-  * recTime(sec)
-  * outputDir
-  * connectServe
-
-# Operation Check
-
-* Windows 10 (Task scheduler)
+* Windows 10 (タスクスケジューラ)
+* Linux (Ubuntu 18)
