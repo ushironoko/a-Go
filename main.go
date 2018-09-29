@@ -15,7 +15,9 @@ type Setting struct {
 	StartHour     int    `json:"startHour"`
 	RecTime       string `json:"recTime"`
 	OutputDir     string `json:"outputDir"`
-	ConnectServer string `json:"connectServer"`
+	RtmpURL       string `json:"rtmpUrl"`
+	FileName      string `json:"fileName"`
+	FileExtention string `json:"fileExtention"`
 }
 
 func runCmdStr(cmdstr string) error {
@@ -61,11 +63,11 @@ func main() {
 	t := time.Now()
 	hour := t.Hour()
 
-	fileName := t.Format("2006_01_02_15_04_05") + ".flv"
-
 	for _, schedule := range setting {
 		if schedule.StartHour == hour {
-			cmdstr := "rtmpdump --live --rtmp " + schedule.ConnectServer + " --timeout 60 -B " + schedule.RecTime + " -o " + schedule.OutputDir + fileName
+
+			fileName := t.Format("20060102150405") + "_" + schedule.FileName + schedule.FileExtention
+			cmdstr := "rtmpdump --live --rtmp " + schedule.RtmpURL + " --timeout 60 -B " + schedule.RecTime + " -o " + schedule.OutputDir + fileName
 
 			runCmdStr(cmdstr)
 

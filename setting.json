@@ -2,26 +2,34 @@
 [
     {
         "startHour" : 2,
-        "recTime" : "1800",
+        "recTime" : "2100",
         "outputDir" : "dist/radio_no_radio/",
-        "connectServer" : "rtmp://fms-base1.mitene.ad.jp/agqr/aandg22"
+        "rtmpUrl" : "rtmp://fms-base1.mitene.ad.jp/agqr/aandg22",
+        "fileName" : "伊福部崇のラジオのラジオ",
+        "fileExtention" : ".flv"
     },        
     {
         "startHour" : 23,
         "recTime" : "3900",
         "outputDir" : "dist/yonayona/",
-        "connectServer" : "rtmp://fms-base1.mitene.ad.jp/agqr/aandg22"
+        "rtmpUrl" : "rtmp://fms-base1.mitene.ad.jp/agqr/aandg22",
+        "fileName" : "鷲崎健のヨルナイト×ヨルナイト",
+        "fileExtention" : ".flv"
     },        
     {
-        "startHour" : 6,
-        "recTime" : "1800",
+        "startHour" : 5,
+        "recTime" : "2100",
         "outputDir" : "dist/nakayoshi/",
-        "connectServer" : "rtmp://fms-base1.mitene.ad.jp/agqr/aandg22"
-    },
+        "rtmpUrl" : "rtmp://fms-base1.mitene.ad.jp/agqr/aandg22",
+        "fileName" : "中☆吉",
+        "fileExtention" : ".flv"
+    },        
     {
-    	"startHour" : 0,
-        "recTime" : "1800",
+        "startHour" : 21,
+        "recTime" : "2100",
         "outputDir" : "dist/",
-        "connectServer" : "rtmp://fms-base1.mitene.ad.jp/agqr/aandg22"
+        "rtmpUrl" : "rtmp://fms-base1.mitene.ad.jp/agqr/aandg22",
+        "fileName" : "テスト",
+        "fileExtention" : ".flv"
     }
 ]
