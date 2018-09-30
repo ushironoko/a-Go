@@ -15,21 +15,5 @@
         "rtmpUrl" : "rtmp://fms-base1.mitene.ad.jp/agqr/aandg22",
         "fileName" : "鷲崎健のヨルナイト×ヨルナイト",
         "fileExtention" : ".flv"
-    },        
-    {
-        "startHour" : 5,
-        "recTime" : "2100",
-        "outputDir" : "dist/nakayoshi/",
-        "rtmpUrl" : "rtmp://fms-base1.mitene.ad.jp/agqr/aandg22",
-        "fileName" : "中☆吉",
-        "fileExtention" : ".flv"
-    },        
-    {
-        "startHour" : 21,
-        "recTime" : "2100",
-        "outputDir" : "dist/",
-        "rtmpUrl" : "rtmp://fms-base1.mitene.ad.jp/agqr/aandg22",
-        "fileName" : "テスト",
-        "fileExtention" : ".flv"
     }
 ]
