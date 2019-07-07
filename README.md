@@ -29,6 +29,7 @@ setting.json に出力ファイルに関する設定を記述できます。
 
 * Windows 10 (タスクスケジューラ)
 * Linux (Ubuntu 18)
+* macOS Mojave 10.14.5
 
 # 注意
 
